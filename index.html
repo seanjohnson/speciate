@@ -1,0 +1,132 @@
+<html>
+	<head>
+		<link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet">
+		<style>
+			body {margin: 0; background: white; font-family: "Ubuntu", sans-serif; line-height: 1.5em;}
+			.container {max-width: 950px; margin: 0 auto; padding: 0 40px;}
+			a {color: #247BDF; text-decoration: none; font-weight: 800; transition: .1s linear all;}
+			a:hover {color: #0258BA;}
+			
+			h1, h2 {font-weight: 100; line-height: 1.5em}
+			header {color: white; min-height: 550px; width: 100%; position: relative; overflow: hidden; padding-bottom: 50px;}
+			#bg {position: absolute; top: 50%; left: 50%; overflow: hidden; min-width: 100%; min-height: 100%; z-index: -100; transform: translate(-50%, -50%);}
+			
+			header nav {display: flex; max-width: 950px; margin: 0 auto; justify-content: flex-end; padding: 20px 40px;}
+			header nav h1 {margin: 0 auto 0 0; padding: 40px 0 0; width: 107px; height: 26px; background: url(logo-white.png) no-repeat top left; font-size: 0; text-indent: -9999px; background-size: 107px 26px;}
+			header nav a {color: white; text-transform: uppercase; font-size: 13px; font-weight: 800; display: block; text-decoration: none; padding: 0 20px;}
+			header nav a:hover {color: #FE1A81;}
+
+			
+			header h1 {font-size: 36px; font-weight: 100; max-width: 500px; line-height: 1.2em;}
+			header p {max-width: 500px; font-weight: 100; margin-bottom: 1.5em; text-shadow: 0 1px 5px #000;}
+
+			a.button {display: inline-block; background: #FE1A81; color: white; text-transform: uppercase; text-decoration: none; font-size: 11px; font-weight: 800; padding: 6px 20px; border-radius: 6px; transition: .1s linear all;}
+			a.button:hover {background: #D01268;}
+			
+			#testimonials {background: #000D42; color: white; text-align: center; padding: 50px 0;}
+			#testimonials .container {display: flex; justify-content: space-between; align-items: center;}
+			#testimonials a img {width: 30px;}
+			#testimonials blockquote img {width: 150px;}
+			#testimonials p {font-size: 28px; font-weight: 100; max-width: 600px; line-height: 1.5em; margin: 30px auto;}
+			#testimonials cite {font-size: 11px; font-style: normal;}
+			#testimonials cite strong {display: block; text-transform: uppercase;}
+			
+			#products {padding: 100px 0;}
+			#products ul {text-align: center; list-style: none; margin: 0; padding: 0; display: flex; justify-content: space-between;}
+			#products li {padding: 0 20px;}
+			#products h3, #products p {margin: 0; padding: 0 0 .5em;}
+			
+			#cta {background: #000D42; color: white; text-align: center; padding: 100px 0;}
+			#cta h2 {max-width: 600px; margin: 0 auto 1em;}
+			
+			footer {background: #247BDF; color: white; }
+			footer .container {display: flex; justify-content: flex-end; font-size: 11px;}
+			footer p {margin: 0 auto 0 0; padding: 15px 0;}
+			footer a {color: white; display: block; padding: 15px 10px;}
+			footer a:hover {color: #80ABDC;}
+			
+			@media (max-width: 768px) {
+				#products ul {flex-direction: column;}
+				#products li {margin-bottom: 2em;}
+			}
+				
+		</style>
+		
+	</head>
+	<body>
+		<header>
+						
+			<nav>
+				<h1>Speciate AI</h1>
+				<a href="">Resources</a>
+				<a href="">About</a>
+				<a href="">Contact Us</a>
+			</nav>
+		
+			<div class="container">
+				<h1>There is a universe of value trapped in unstructured data. We help you unlock it.</h1>
+				<p>Identify leading indicators of company performance. Find white space for innovation. Prioritize new product features. Set the right price.</p> 
+
+				<p>Speciate AI helps you mine unstructured data to launch successful products, improve the customer experience, and monitor quality. All without tedious and costly data integration.</p>
+				<a href="" class="button">Contact Us</a>
+			</div>
+			
+			<video autoplay muted loop id="bg">
+			  <source src="bg-video.mp4" type="video/mp4">
+			</video>
+		</header>
+		
+		<div id="testimonials">
+			<div class="container">
+				
+				<a href=""><img src="prev.png" /></a>
+				<blockquote>
+					<img src="loreal.png" />
+					<p>"Speciate is my team's secret weapon. The speed and depth of insights is unmatched."</p>
+					<cite>
+						<strong>Englebert Humperdink</strong>
+						Head of R&D, L'Oreal Cosmetics Division
+					</cite>
+				</blockquote>
+				<a href=""><img src="next.png" /></a>
+			</div>
+		</div>
+		
+		
+		<div id="products" class="container">
+			
+			<ul>
+				<li>
+					<h3><a href="">Product Benchmarking</a></h3>
+					<p>Benchmark your products vs. competitors based on actual Amazon, Google, App store reviews.</p>
+				</li>
+				<li>
+					<h3><a href="">White Space Analysis</a></h3>
+					<p>Monitor market activity to identify trends, white space opportunities, and unmet needs.</p>
+				</li>		
+				<li>
+					<h3><a href="">Company Signals</a></h3>
+					<p>Analysis of company sentiment to identify leading indicators of company performance and risks.</p>
+				</li>				
+			</ul>
+		</div>
+		
+		<div id="cta">
+			<div class="container">
+				<h2>Actionable insights are all over the web. Let us help you find and make meaning of them.</h2>
+				<a href="" class="button">Contact Us</a>
+			</div>
+		</div>
+		
+		<footer>
+			<nav class="container">
+				<p>All content copyright &copy; 2019 Speciate AI Inc.</p>
+				<a href="">About Us</a>
+				<a href="">Resources</a>
+				<a href="">Contact Us</a>
+				<a href="">Privacy</a>
+				<a href="">Terms of Use</a>
+			</nav>
+		</footer>
+	</body>
+</html>
